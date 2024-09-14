@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  min-width: 600px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 4em;
+  padding: 10px;
+  margin: 0;
+}
+
+.tic-word {
+  color: #48d2fe;
+}
+
+.tac-word {
+  color: #e2be00;
+}
+
+.toe-word {
+  color: #48d2fe;
+}
+
+.board-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b0040;
+  border-radius: 32px;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cell {
+  display: flex;
+  height: 130px;
+  width: 130px;
+  background: #43115b;
+  border: 4px solid #2b0040;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #f0f0f2;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.cell:hover {
+  border: 4px solid #e2be00;
+}
+
+.custom-button {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 16px 0px;
+  background: #43115b;
+  border: 4px solid #2b0040;
+  border-radius: 16px;
+  padding: 16px;
+  color: #f0f0f2;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  border: 4px solid #e2be00;
+  color: #e2be00;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #43115b;
+  color: white;
+  font-size: 24px;
+  padding: 10px 100px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em; 
+  }
+
+  .cell {
+    height: 80px;
+    width: 80px;
+    font-size: 30px; 
+  }
+
+  .custom-button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .modal-content {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .cell {
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+  }
+
+  .custom-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .modal-content {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
